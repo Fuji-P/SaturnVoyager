@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SaturnVoyager</title>
+		<meta charset="utf-8" />
+		<style>
+			#space {
+				width: 800px; height: 800px;
+				touch-action: none;
+			}
+			#START {
+				position: absolute;
+				left: 200px;
+				top: 200px;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<button onclick="location.reload();">Retry</button>
+		<br>
+		<table id="table"></table>
+		<script src="index.js" async defer></script>
+		<!-- Thanks to http://takao-suenobu.com/ & http://dova-s.jp/ -->
+		<audio src="Escape.mp3" id="bgm" loop="loop"></audio>
+		<canvas id="space" width="800" height="800"></canvas>
+		<img id="START" src="start.png" onclick="go()"><br/>
+		<img id="rockImg" src="rock.png" style="display:none" />
+		<img id="scope" src="scope.png" style="display:none" />
+	</body>
+</html>
